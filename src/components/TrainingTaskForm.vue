@@ -1,12 +1,12 @@
 <template>
   <div class="flex items-center space-x-10 mt-10">
     <label for="დასახელება" class="text-lg text-center w-44"
-      >ამოცანები პროგრამებისა და პროექტებისთვის:</label
+      >ამოცანები ტრენინგთან მიმართებაში:</label
     >
     <input
       type="text"
-      :value="task"
-      @input="$emit('update:task', $event.target.value)"
+      :value="training_task"
+      @input="$emit('update:training_task', $event.target.value)"
       class="w-full ml-auto bg-gray-200 p-4 rounded-full mt-2 outline-0"
     />
   </div>
@@ -47,10 +47,9 @@
     />
   </div>
 </template>
-
 <script setup>
 defineProps({
-  task: String,
+  training_task: String,
   task_product: String,
   planned_time: String,
   factual_time: String,

@@ -9,7 +9,7 @@ export default {
         button: '#8BD3DD'
       },
       width:{
-        form: '1200px',
+        form: '1400px',
       },
       margin: {
         content: '2800px'
