@@ -7,6 +7,12 @@ export default {
         primary: '#E4CABC',
         secondary: '#A383FF',
         button: '#8BD3DD'
+      },
+      width:{
+        form: '1200px',
+      },
+      margin: {
+        content: '2800px'
       }
     }
   },
