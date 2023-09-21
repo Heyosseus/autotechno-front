@@ -16,10 +16,44 @@ const router = createRouter({
       component: HomeView
     },
     {
-      path: '/result',
+      path: '/result/:id',
       name: 'result',
-      component: ResultView
+      component: ResultView,
+      props: true,
+      children: [
+        {
+          path: 'edit-name/:id',
+          name: 'edit-name',
+          component: () => import('@/components/modals/Base/EditBaseModal.vue')
+        },
+        {
+          path: '/edit-task/:id',
+          name: 'edit-task',
+          component: () => import('@/components/modals/Task/EditTaskModal.vue')
+        },
+        {
+          path: '/edit-regular-task/:id',
+          name: 'edit-regular-task',
+          component: () => import('@/components/modals/Regular/EditRegularTaskModal.vue')
+        },
+        {
+          path: '/edit-quota-task/:id',
+          name: 'edit-quota-task',
+          component: () => import('@/components/modals/Quota/EditQuotaTaskModal.vue')
+        },
+        {
+          path: '/edit-training-task/:id',
+          name: 'edit-training-task',
+          component: () => import('@/components/modals/Training/EditTrainingTaskModal.vue')
+        },
+        {
+          path: '/edit-unplanned-task/:id',
+          name: 'edit-unplanned-task',
+          component: () => import('@/components/modals/Unplanned/EditUnplannedTaskModal.vue')
+        }
+      ]
     },
+
     {
       path: '/task',
       name: 'task',
