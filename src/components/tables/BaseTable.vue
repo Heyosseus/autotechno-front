@@ -1,6 +1,6 @@
 <template>
-  <div class="flex space-x-4">
-    <table class="w-form divide-y divide-gray-200">
+  <div class="flex md:w-[600px] lg:w-full items-center justify-center space-x-4">
+    <table class="min-w-full divide-y divide-gray-200">
       <thead>
         <tr>
           <th
@@ -35,7 +35,7 @@
           </th>
           <th
             scope="col"
-            class="px-6 py-3 bg-gray-50 text-left text-xl font-medium text-gray-500 uppercase tracking-wider"
+            class=" px-6 py-3 bg-gray-50 text-left text-xl font-medium text-gray-500 uppercase tracking-wider"
           >
             ინსტრუმენტები
           </th>
@@ -57,7 +57,12 @@
               <img src="@/assets/editing.png" alt="" class="w-8 mt-2" />
             </router-link>
             <div class="w-[1px] bg-black h-8 mt-2"></div>
-            <img src="@/assets/delete.png" alt="" class="w-8 mt-2 cursor-pointer" @click="deleteItem(item.id)" />
+            <img
+              src="@/assets/delete.png"
+              alt=""
+              class="w-8 mt-2 cursor-pointer"
+              @click="deleteItem(item.id)"
+            />
             <div class="w-[1px] bg-black h-8 mt-2"></div>
             <router-link to="/">
               <img src="@/assets/add.png" alt="" class="w-8 mt-3" />
@@ -67,7 +72,7 @@
       </tbody>
     </table>
 
-    <RouterView ></RouterView>
+    <RouterView></RouterView>
   </div>
 </template>
 <script setup>

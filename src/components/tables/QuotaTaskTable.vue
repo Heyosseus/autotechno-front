@@ -1,6 +1,6 @@
 <template>
-  <div class="flex w-full items-center justify-center mt-10">
-    <table class="min-w-full divide-y divide-gray-200">
+  <div class="flex md:w-[600px] lg:w-full  items-center justify-center mt-10">
+    <table class="w-full divide-y divide-gray-200">
       <thead>
         <tr>
           <th

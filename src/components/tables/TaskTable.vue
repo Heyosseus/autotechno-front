@@ -1,6 +1,6 @@
 <template>
-  <div class="flex space-x-4 mt-10">
-    <table class="w-form divide-y divide-gray-200">
+  <div class="flex md:w-[600px] lg:w-full items-center justify-center space-x-4 mt-10">
+    <table class="w-full divide-y divide-gray-200">
       <thead>
         <tr>
           <th
@@ -62,7 +62,12 @@
               <img src="@/assets/editing.png" alt="" class="w-8 mt-2" />
             </router-link>
             <div class="w-[1px] bg-black h-8 mt-2"></div>
-            <img src="@/assets/delete.png" alt="" class="w-8 mt-2 cursor-pointer" @click="deleteItem(item.id)" />
+            <img
+              src="@/assets/delete.png"
+              alt=""
+              class="w-8 mt-2 cursor-pointer"
+              @click="deleteItem(item.id)"
+            />
             <div class="w-[1px] bg-black h-8 mt-2"></div>
             <router-link to="/task">
               <img src="@/assets/add.png" alt="" class="w-8 mt-3" />

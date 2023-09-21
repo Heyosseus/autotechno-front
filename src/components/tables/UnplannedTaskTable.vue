@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-center justify-center mt-10">
-    <table class="w-full divide-y divide-gray-200 mb-40">
+  <div class="flex md:w-fit lg:w-full items-center justify-center mt-10">
+    <table class="lg:w-full divide-y divide-gray-200 mb-40">
       <thead>
         <tr>
           <th

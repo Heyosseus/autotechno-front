@@ -3,9 +3,9 @@
     <base-header />
     <div class="p-6 flex w-full justify-center">
       <div
-        class="bg-white flex mt-10 flex-col justify-center items-center w-form py-6 px-10 pb-20 rounded-xl max-h-[860px] overflow-y-auto"
+        class="bg-white flex mt-10 flex-col justify-center items-center w-fit lg:w-form py-6 px-10 pb-20 rounded-xl max-h-[860px] overflow-y-auto"
       >
-        <form action="" class="mt-10 flex px-20 flex-col w-full">
+        <form action="" class="mt-10 flex md:px-0 lg:px-20 flex-col md:w-[700px] lg:w-full">
           <h1 class="text-4xl text-center mb-2">კვირის გეგმა</h1>
           <div class="w-full h-[1px] mt-4 bg-black"></div>
           <base-form

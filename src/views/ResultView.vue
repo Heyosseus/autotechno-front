@@ -4,9 +4,9 @@
       ><img src="@/assets/back.png" alt="" class="w-4 bg-transparent" />
       <p class="underline">მთავარ გვერდზე დაბრუნება</p></router-link
     >
-    <div class="w-form px-10 mt-10 space-y-4">
+    <div class="w-full xl:w-form lg:px-32 mt-10 space-y-4">
       <h2>ზოგადი დასახელება:</h2>
-      <base-form></base-form>
+      <base-table></base-table>
       <h2>ამოცანები პროგრამებისთვის:</h2>
 
       <task-table></task-table>
@@ -26,7 +26,7 @@
   </div>
 </template>
 <script setup>
-import BaseForm from '../components/tables/BaseTable.vue'
+import BaseTable from '../components/tables/BaseTable.vue'
 import TaskTable from '@/components/tables/TaskTable.vue'
 import QuotaTaskTable from '@/components/tables/QuotaTaskTable.vue'
 import RegularTaskTable from '@/components/tables/RegularTaskTable.vue'
