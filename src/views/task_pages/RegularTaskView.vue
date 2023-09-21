@@ -31,9 +31,9 @@
   </div>
 </template>
 <script setup>
-import BaseHeader from '../../components/BaseHeader.vue'
+import BaseHeader from '../../components/layout/BaseHeader.vue'
 
-import RegularTaskForm from '../../components/RegularTaskForm.vue'
+import RegularTaskForm from '../../components/forms/RegularTaskForm.vue'
 import { ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router'

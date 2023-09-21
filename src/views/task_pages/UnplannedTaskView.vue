@@ -34,9 +34,9 @@
   </div>
 </template>
 <script setup>
-import BaseHeader from '../../components/BaseHeader.vue'
+import BaseHeader from '../../components/layout/BaseHeader.vue'
 
-import UnplannedTaskForm from '../../components/UnplannedTaskForm.vue'
+import UnplannedTaskForm from '../../components/forms/UnplannedTaskForm.vue'
 import { ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
@@ -55,7 +55,7 @@ const submit = async () => {
     completion_date: completion_date.value
   }
   await axios.post('http://localhost:8000/api/unplanned-task', data).then(() => {
-    router.push('/result')
+    router.push('/result/1')
   })
 }
 </script>

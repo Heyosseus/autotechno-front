@@ -1,5 +1,6 @@
 import './index.css'
-
+import '@/config/rules.js'
+import '@/config/messages.js'
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

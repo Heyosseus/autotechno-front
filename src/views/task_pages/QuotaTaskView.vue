@@ -31,8 +31,8 @@
   </div>
 </template>
 <script setup>
-import BaseHeader from '../../components/BaseHeader.vue'
-import QuotaForm from '../../components/QuotaForm.vue'
+import BaseHeader from '../../components/layout/BaseHeader.vue'
+import QuotaForm from '../../components/forms/QuotaForm.vue'
 import { ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router'

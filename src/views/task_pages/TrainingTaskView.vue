@@ -15,7 +15,7 @@
             :planned_time="planned_time"
             :factual_time="factual_time"
             :completion_date="completion_date"
-            @update:task="task = $event"
+            @update:training_task="training_task = $event"
             @update:task_product="task_product = $event"
             @update:planned_time="planned_time = $event"
             @update:factual_time="factual_time = $event"
@@ -31,9 +31,9 @@
   </div>
 </template>
 <script setup>
-import BaseHeader from '../../components/BaseHeader.vue'
+import BaseHeader from '../../components/layout/BaseHeader.vue'
 
-import TrainingTaskForm from '@/components/TrainingTaskForm.vue'
+import TrainingTaskForm from '@/components/forms/TrainingTaskForm.vue'
 
 import { ref } from 'vue'
 import axios from 'axios'
@@ -50,6 +50,7 @@ const submit = async () => {
   const data = {
     training_tasks: training_task.value,
     task_product: task_product.value,
+    planned_time: planned_time.value,
     factual_time: factual_time.value,
     completion_date: completion_date.value
   }

@@ -31,8 +31,8 @@
   </div>
 </template>
 <script setup>
-import BaseHeader from '../../components/BaseHeader.vue'
-import TaskForm from '../../components/TaskForm.vue'
+import BaseHeader from '../../components/layout/BaseHeader.vue'
+import TaskForm from '../../components/forms/TaskForm.vue'
 import { ref } from 'vue'
 import axios from 'axios'
 import { useRouter } from 'vue-router'
